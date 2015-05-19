@@ -35,59 +35,59 @@
       </block>
     </statement>
     <next>
-      <block type="oled_drawnumber" id="10" inline="true">
+      <block type="oled_drawnumber" id="9" inline="true">
         <value name="NUMBER">
-          <block type="variables_get" id="11">
+          <block type="variables_get" id="10">
             <field name="VAR">blue</field>
           </block>
         </value>
         <next>
-          <block type="controls_if" id="12" inline="false">
+          <block type="controls_if" id="11" inline="false">
             <mutation else="1"></mutation>
             <value name="IF0">
-              <block type="logic_compare" id="13" inline="true">
+              <block type="logic_compare" id="12" inline="true">
                 <field name="OP">LT</field>
                 <value name="A">
-                  <block type="variables_get" id="14">
+                  <block type="variables_get" id="13">
                     <field name="VAR">blue</field>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_number" id="15">
+                  <block type="math_number" id="14">
                     <field name="NUM">90</field>
                   </block>
                 </value>
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_forward" id="16">
+              <block type="movement_forward" id="15">
                 <next>
-                  <block type="robot_delay" id="17" inline="true">
+                  <block type="robot_delay" id="16" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="18">
+                      <block type="math_number" id="17">
                         <field name="NUM">200</field>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_stop" id="19"></block>
+                      <block type="movement_stop" id="18"></block>
                     </next>
                   </block>
                 </next>
               </block>
             </statement>
             <statement name="ELSE">
-              <block type="led_select" id="20" inline="true">
+              <block type="led_select" id="19" inline="true">
                 <field name="ACTION">FLASH</field>
                 <value name="LED">
-                  <block type="math_number" id="21">
+                  <block type="math_number" id="20">
                     <field name="NUM">0</field>
                   </block>
                 </value>
                 <next>
-                  <block type="led_select" id="22" inline="true">
+                  <block type="led_select" id="21" inline="true">
                     <field name="ACTION">FLASH</field>
                     <value name="LED">
-                      <block type="math_number" id="23">
+                      <block type="math_number" id="22">
                         <field name="NUM">5</field>
                       </block>
                     </value>
@@ -96,14 +96,14 @@
               </block>
             </statement>
             <next>
-              <block type="robot_delay" id="24" inline="true">
+              <block type="robot_delay" id="23" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="25">
+                  <block type="math_number" id="24">
                     <field name="NUM">200</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_stop" id="26"></block>
+                  <block type="movement_stop" id="25"></block>
                 </next>
               </block>
             </next>
